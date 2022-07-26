@@ -17,3 +17,8 @@ ro.sys.fw.dex2oat_thread_count=8
 
 # Display
 ro.support_hide_display_cutout=true
+
+# SkiaGL
+debug.hwui.renderer=skiagl
+debug.renderengine.backend=skiaglthreaded
+renderthread.skia.reduceopstasksplitting=true

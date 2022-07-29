@@ -58,6 +58,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.camera.gyro.disable=0
 
+# Chipset
+ro.soc.manufacturer=Qualcomm
+ro.soc.model=SDM710
+
 # Dalvik
 PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.dex2oat64.enabled=true

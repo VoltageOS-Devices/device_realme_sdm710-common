@@ -115,6 +115,7 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.surface_flinger.has_HDR_display=true \
     ro.surface_flinger.use_color_management=true \
     ro.surface_flinger.wcg_composition_dataspace=143261696
+    debug.sf.disable_client_composition_cache=1
 
 # IMS
 PRODUCT_PROPERTY_OVERRIDES += \

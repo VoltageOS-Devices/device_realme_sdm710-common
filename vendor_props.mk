@@ -199,3 +199,6 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.net.enable_dual_wifi=1
     wifi.aware.interface=wifi-aware0
+
+# Disable binary xml
+persist.sys.binary_xml=false

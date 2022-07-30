@@ -635,6 +635,9 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.camera.device@1.0.vendor \
     libtinyxml.vendor
 
+# Speed profile services and wifi-service to reduce RAM and storage
+PRODUCT_SYSTEM_SERVER_COMPILER_FILTER := speed-profile
+
 PRODUCT_DEXPREOPT_SPEED_APPS += \
     Settings \
     SystemUI

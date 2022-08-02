@@ -73,8 +73,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.display.cabl=2 \
     ro.vendor.display.sensortype=2 \
     vendor.display.enable_default_color_mode=1
-    persist.sys.sf.color_mode=9 \
-    persist.sys.sf.native_mode=2
 
 # Display density
 PRODUCT_PROPERTY_OVERRIDES += \

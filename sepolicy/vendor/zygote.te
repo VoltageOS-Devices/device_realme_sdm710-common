@@ -1,3 +1,1 @@
 allow zygote zygote:capability kill;
-
-allow zygote proc_cmdline:file { read open getattr };

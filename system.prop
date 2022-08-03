@@ -41,6 +41,9 @@ ro.use_data_netmgrd=true
 # Seamless transfer
 sys.fflag.override.settings_seamless_transfer=true
 
+# fastbootd
+ro.fastbootd.available=true
+
 # Graphics
 debug.sf.disable_hwc_vds=1
 persist.debug.wfd.enable=1

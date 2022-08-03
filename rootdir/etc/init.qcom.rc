@@ -167,6 +167,8 @@ on boot
     chown system system /proc/touchpanel/double_tap_enable
     write /proc/touchpanel/double_tap_enable 1
 
+    setprop init.svc.console stopped
+
     chown bluetooth bluetooth /sys/module/bluetooth_power/parameters/power
     chown bluetooth net_bt /sys/class/rfkill/rfkill0/type
     chown bluetooth net_bt /sys/class/rfkill/rfkill0/state

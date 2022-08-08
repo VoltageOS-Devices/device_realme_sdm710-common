@@ -98,8 +98,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Graphics
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.egl.callstack=1 \
-    debug.egl.hw=0 \
-    debug.mdpcomp.logs=0 \
     debug.sf.hw=1 \
     debug.sf.latch_unsignaled=0 \
     persist.sys.sf.color_saturation=1.0 \
@@ -122,8 +120,10 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.surface_flinger.has_wide_color_display=true \
     ro.surface_flinger.has_HDR_display=true \
     ro.surface_flinger.use_color_management=true \
-    ro.surface_flinger.wcg_composition_dataspace=143261696
-    debug.sf.disable_client_composition_cache=1
+    ro.surface_flinger.wcg_composition_dataspace=143261696 \
+    debug.sf.disable_client_composition_cache=1 \
+    debug.sdm.support_writeback=0 \
+    debug.sf.enable_gl_backpressure=1
 
 # IMS
 PRODUCT_PROPERTY_OVERRIDES += \

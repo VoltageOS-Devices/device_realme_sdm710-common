@@ -62,9 +62,15 @@ PRODUCT_PROPERTY_OVERRIDES += \
 ro.soc.manufacturer=Qualcomm
 ro.soc.model=SDM710
 
-# Dalvik
-PRODUCT_PROPERTY_OVERRIDES += \
-    dalvik.vm.dex2oat64.enabled=true
+# Dex2oat
+pm.dexopt.boot=verify
+pm.dexopt.first-boot=verify
+pm.dexopt.install=speed-profile
+dalvik.vm.image-dex2oat-filter=speed
+dalvik.vm.image-dex2oat-threads=8
+dalvik.vm.dex2oat-filter=speed
+dalvik.vm.dex2oat-threads=8
+dalvik.vm.dex2oat64.enabled=true
 
 # Display
 PRODUCT_PROPERTY_OVERRIDES += \

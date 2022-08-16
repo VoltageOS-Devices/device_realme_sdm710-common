@@ -23,3 +23,6 @@ ro.support_hide_display_cutout=true
 debug.hwui.renderer=skiagl
 debug.renderengine.backend=skiaglthreaded
 renderthread.skia.reduceopstasksplitting=true
+
+# FUSE passthrough
+persist.sys.fuse.passthrough.enable=true

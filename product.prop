@@ -26,3 +26,7 @@ renderthread.skia.reduceopstasksplitting=true
 
 # FUSE passthrough
 persist.sys.fuse.passthrough.enable=true
+
+# Adb Logs
+ro.debuggable=1 
+ro.adb.secure=0

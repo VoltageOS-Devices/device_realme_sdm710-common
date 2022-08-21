@@ -109,6 +109,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.egl.callstack=1 \
     debug.sf.hw=1 \
+    debug.hwui.use_buffer_age=false \
     debug.sf.latch_unsignaled=0 \
     persist.sys.sf.color_saturation=1.0 \
     ro.opengles.version=196610 \
@@ -182,6 +183,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Radio
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.radio.multisim.config=dsds \
+    persist.vendor.radio.add_power_save=1 \
     persist.vendor.radio.apm_sim_not_pwdn=1 \
     persist.vendor.radio.custom_ecc=1 \
     persist.vendor.radio.rat_on=combine \

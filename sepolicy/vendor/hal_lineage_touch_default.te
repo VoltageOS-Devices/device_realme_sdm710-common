@@ -1,2 +1,6 @@
+# Allow hal_lineage_touch_default to read and write to proc_touchpanel
+allow hal_lineage_touch_default proc_touchpanel:dir search;
+allow hal_lineage_touch_default proc_touchpanel:file rw_file_perms;
+
 get_prop(hal_lineage_touch_default, vendor_touch_prop)
 set_prop(hal_lineage_touch_default, vendor_touch_prop)

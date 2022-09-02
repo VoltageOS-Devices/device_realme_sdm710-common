@@ -2,5 +2,7 @@ allow system_server hal_light_default:process signal;
 allow system_server app_zygote:process { getpgid };
 allow system_server sysfs_battery_supply:file { read open getattr };
 allow system_server sysfs_battery_supply:file rw_file_perms;
+allow system_server kmsg_device:chr_file { write };
+allow system_server app_data_file:file { open };
 r_dir_file(system_server, sysfs_battery_supply);
 

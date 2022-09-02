@@ -1,1 +1,3 @@
 allow zygote zygote:capability kill;
+
+allow zygote apk_data_file:dir search;

@@ -1,2 +1,3 @@
 allow logpersist cache_file:dir { write add_name read open };
 allow logpersist cache_file:file { open ioctl getattr };
+allow logpersist system_data_root_file:dir { write read };

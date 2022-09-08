@@ -45,10 +45,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.voice.path.for.pcm.voip=true
 
 # App launch prefetching (IORapd)
-ro.iorapd.enable=false
-iorapd.perfetto.enable=false
-iorapd.readahead.enable=false
-persist.device_config.runtime_native_boot.iorap_readahead_enable=false
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.iorapd.enable=false \
+    iorapd.perfetto.enable=false \
+    iorapd.readahead.enable=false
 
 # Bluetooth
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -59,18 +59,19 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.camera.gyro.disable=0
 
 # Chipset
-ro.soc.manufacturer=Qualcomm
-ro.soc.model=SDM710
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.soc.manufacturer=Qualcomm \
+    ro.soc.model=SDM710
 
 # Dex2oat
-pm.dexopt.boot=verify
-pm.dexopt.first-boot=verify
-pm.dexopt.install=speed-profile
-dalvik.vm.image-dex2oat-filter=speed
-dalvik.vm.image-dex2oat-threads=8
-dalvik.vm.dex2oat-filter=speed
-dalvik.vm.dex2oat-threads=8
-dalvik.vm.dex2oat64.enabled=true
+PRODUCT_PROPERTY_OVERRIDES += \
+    pm.dexopt.boot=verify \
+    pm.dexopt.install=speed-profile \
+    dalvik.vm.image-dex2oat-filter=speed \
+    dalvik.vm.image-dex2oat-threads=8 \
+    dalvik.vm.dex2oat-filter=speed \
+    dalvik.vm.dex2oat-threads=8 \
+    dalvik.vm.dex2oat64.enabled=true
 
 # Display
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -85,8 +86,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.sf.lcd_density=420
 
 # Dolby
-persist.vendor.audio_fx.current=dolby
-ro.vendor.dolby.dax.version=DS1_2.2.0.0_r1
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.vendor.audio_fx.current=dolby \
+    ro.vendor.dolby.dax.version=DS1_2.2.0.0_r1
 
 # DRM
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -167,7 +169,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.media.recorder-max-base-layer-fps=60
 
 # Phantom process monitoring
-sys.fflag.override.settings_enable_monitor_phantom_procs=false
+PRODUCT_PROPERTY_OVERRIDES += \
+    sys.fflag.override.settings_enable_monitor_phantom_procs=false
 
 # Perf
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -217,4 +220,5 @@ PRODUCT_PROPERTY_OVERRIDES += \
     wifi.aware.interface=wifi-aware0
 
 # Disable binary xml
-persist.sys.binary_xml=false
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.sys.binary_xml=false

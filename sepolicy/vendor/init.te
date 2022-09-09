@@ -23,3 +23,6 @@ allow init vfat:dir search;
 # Dolby
 allow init vendor_data_file:file lock;
 allow init hal_audio_default:binder call;
+
+# Smart Charging
+allow init sysfs_battery_supply:file { setattr };

@@ -6,3 +6,5 @@ allow system_server kmsg_device:chr_file { write };
 allow system_server app_data_file:file { open };
 r_dir_file(system_server, sysfs_battery_supply);
 
+# Smart charging
+allow system_server sysfs_battery_supply:file { getattr open read write };

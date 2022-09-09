@@ -120,7 +120,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.hwui.use_hint_manager=true \
     debug.hwui.target_cpu_time_percent=30 \
     ro.hardware.vulkan=adreno \
-    ro.hardware.egl=adreno
+    ro.hardware.egl=adreno \
+    debug.renderengine.backend=skiaglthreaded
 
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.surface_flinger.force_hwc_copy_for_virtual_displays=true \

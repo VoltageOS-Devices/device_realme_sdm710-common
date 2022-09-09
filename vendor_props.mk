@@ -79,7 +79,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.display.ad=1 \
     ro.vendor.display.cabl=2 \
     ro.vendor.display.sensortype=2 \
-    vendor.display.enable_default_color_mode=1
+    vendor.display.enable_default_color_mode=1 \
+    vendor.display.use_smooth_motion=1
 
 # Display density
 PRODUCT_PROPERTY_OVERRIDES += \

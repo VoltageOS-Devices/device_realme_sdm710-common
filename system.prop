@@ -81,9 +81,10 @@ ro.lmk.filecache_min_kb=153600
 ro.lmk.stall_limit_critical=40
 
 # Iorap
-vendor.iop.enable_prefetch_ofr=0
+vendor.iop.enable_prefetch_ofr=1
 iorapd.perfetto.enable=false
 iorapd.readahead.enable=false
+vendor.iop.enable_uxe=1
 
 # VSync
 debug.cpurend.vsync=false

@@ -144,16 +144,16 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.dbg.ims_volte_enable=1 \
     persist.vendor.radio.data_ltd_sys_ind=1 \
     persist.vendor.radio.data_con_rprt=1 \
-    persist.vendor.radio.add_power_save=1
-    persist.vendor.radio.mt_sms_ack=30
-    persist.vendor.ims.disableADBLogs=1
-    persist.vendor.ims.disableDebugLogs=1
-    persist.vendor.ims.disableIMSLogs=1
+    persist.vendor.radio.add_power_save=1 \
+    persist.vendor.radio.mt_sms_ack=30 \
+    persist.vendor.ims.disableADBLogs=1 \
+    persist.vendor.ims.disableDebugLogs=1 \
+    persist.vendor.ims.disableIMSLogs=1 \
     persist.vendor.ims.disableQXDMLogs=1
 
 # IORap app launch prefetching using Perfetto traces and madvise
 PRODUCT_PRODUCT_PROPERTIES += \
-    persist.device_config.runtime_native_boot.iorap_readahead_enable=false
+    persist.device_config.runtime_native_boot.iorap_readahead_enable=false \
     ro.iorapd.enable=false
 
 # Keystore
@@ -212,7 +212,7 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 
 # Wi-Fi
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.vendor.net.enable_dual_wifi=1
+    ro.vendor.net.enable_dual_wifi=1 \
     wifi.aware.interface=wifi-aware0
 
 # Disable binary xml

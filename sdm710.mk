@@ -220,6 +220,7 @@ PRODUCT_PACKAGES += \
     libqdMetaData.system \
     libqdMetaData \
     libtinyxml \
+    libtinyxml.vendor \
     libvulkan \
     hwcomposer.sdm710 \
     memtrack.sdm710 \
@@ -496,6 +497,7 @@ PRODUCT_PACKAGES += \
 
 # Wifi
 PRODUCT_PACKAGES += \
+    android.hardware.wifi@1.5.vendor \
     android.hardware.wifi@1.0-service \
     hostapd \
     libwpa_client \

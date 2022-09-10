@@ -156,8 +156,6 @@ on early-boot
     chown system system /mnt/vendor/persist/data/pfm/licenses
     chmod 0775 /mnt/vendor/persist/data/pfm/licenses
 
-    pm disable com.google.android.gms/.chimera.GmsIntentOperationService
-
 on boot
     chmod 0660 /proc/touchpanel/oppo_tp_limit_enable
     chmod 0660 /proc/touchpanel/oppo_tp_direction

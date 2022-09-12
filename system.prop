@@ -6,6 +6,7 @@ ro.bluetooth.wipower=false
 ro.bluetooth.emb_wp_mode=false
 persist.vendor.bt.a2dp_offload_cap=sbc-aptx-aptxhd-aac-ldac
 persist.vendor.bt.a2dp.hal.implementation=true
+persist.vendor.btstack.enable.twsplus=true
 
 # Camera
 ro.camera.hfr.enable=1

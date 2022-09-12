@@ -8,6 +8,7 @@ persist.vendor.bt.a2dp_offload_cap=sbc-aptx-aptxhd-aac-ldac
 persist.vendor.bt.a2dp.hal.implementation=true
 persist.vendor.btstack.enable.twsplus=true
 persist.vendor.btstack.enable.lpa=true
+persist.vendor.bt.a2dp.aac_whitelist=false
 
 # Camera
 ro.camera.hfr.enable=1
